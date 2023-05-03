@@ -1,24 +1,28 @@
 import model.Employee;
 import service.EmployeeServiceImpl;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-/*Map<String, Employee> baseOfEmployees = new HashMap<>(Map.of());
-
-("1", new Employee("Иван", "Иванович", "Иванов", 1, 20),
-                        "2", new Employee("Иван", "Иванович", "Иванов", 1, 20),
-                        "3", new Employee("Иван", "Иванович", "Иванов", 1, 20)));
-
-
-        baseOfEmployees.put("Иванов", new Employee("Иван", "Иванович", "Иванов", 1, 20));
-
-        System.out.println(baseOfEmployees);*/
 
         EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
-        System.out.println(employeeService.getBaseOfEmployees());
+        //Добавление нового сотрудника
+        //employeeService.addEmployee(new Employee("Сидор", "Сидорович", "Сидоров", 3, 10));
+
+        //печать всего списка
+        // System.out.println(employeeService.getBaseOfEmployees());
+
+        //поиск сотрудника
+        //System.out.println(employeeService.findEmployee("ОксанаОксановнаОксанова"));
+
+        //удаление сотрудника
+        //employeeService.removeEmployee("СидорСидоровичСидоров");
+
+        //сумма всех зп
+        //System.out.println(employeeService.sumSalary());
+
+        //минимальная зп во всей фирме
+        //System.out.println(employeeService.minSalary());
 
     }
 }
